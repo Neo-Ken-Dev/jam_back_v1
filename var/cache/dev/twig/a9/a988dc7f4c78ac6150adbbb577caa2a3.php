@@ -1091,6 +1091,6 @@ $context["log"], "type", [], "any", false, false, false, 144))) ? ("silenced") :
         {% endif %}
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/logger.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/symfony/web-profiler-bundle/Resources/views/Collector/logger.html.twig");
+", "@WebProfiler/Collector/logger.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/logger.html.twig");
     }
 }

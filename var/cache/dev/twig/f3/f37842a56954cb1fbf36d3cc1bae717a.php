@@ -79,6 +79,6 @@ class __TwigTemplate_ebcac1beda1aa2845d7c3fe3f90ef59b extends Template
     <polyline points=\"3 7 12 13 21 7\"></polyline>
 </svg>
 
-", "@WebProfiler/Icon/mailer.svg", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/symfony/web-profiler-bundle/Resources/views/Icon/mailer.svg");
+", "@WebProfiler/Icon/mailer.svg", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/symfony/web-profiler-bundle/Resources/views/Icon/mailer.svg");
     }
 }

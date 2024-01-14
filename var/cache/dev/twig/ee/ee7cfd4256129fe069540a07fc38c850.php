@@ -4924,6 +4924,6 @@ body.theme-dark #collector-content .sf-dump-ellipsis-path { max-width: 5em; }
 body.theme-dark #collector-content .sf-dump .trace li.selected {
     background: rgba(255, 255, 153, 0.5);
 }
-", "@WebProfiler/Profiler/profiler.css.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/profiler.css.twig");
+", "@WebProfiler/Profiler/profiler.css.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/profiler.css.twig");
     }
 }

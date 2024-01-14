@@ -90,6 +90,6 @@ class __TwigTemplate_c5e2cfe734280435b8d6caf3d912dc97 extends Template
 <span class=\"badge badge-danger\" title=\"{{ 'label.inaccessible.explanation'|trans }}\">
     {{ 'label.inaccessible'|trans }}
 </span>
-", "@EasyAdmin/label/inaccessible.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/easycorp/easyadmin-bundle/src/Resources/views/label/inaccessible.html.twig");
+", "@EasyAdmin/label/inaccessible.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/easycorp/easyadmin-bundle/src/Resources/views/label/inaccessible.html.twig");
     }
 }

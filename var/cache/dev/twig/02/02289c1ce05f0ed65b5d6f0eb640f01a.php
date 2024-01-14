@@ -456,6 +456,6 @@ class __TwigTemplate_796129f941c66c7d2b147d438a66849c extends Template
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/twig.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/symfony/web-profiler-bundle/Resources/views/Collector/twig.html.twig");
+", "@WebProfiler/Collector/twig.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/twig.html.twig");
     }
 }

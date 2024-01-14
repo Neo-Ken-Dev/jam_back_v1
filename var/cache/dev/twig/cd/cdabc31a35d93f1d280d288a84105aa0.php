@@ -79,6 +79,6 @@ class __TwigTemplate_f9f143bd7af9bca11540f708dc4fdc29 extends Template
     <line x1=\"4\" y1=\"10\" x2=\"20\" y2=\"10\" />
     <line x1=\"10\" y1=\"4\" x2=\"10\" y2=\"20\" />
 </svg>
-", "@EasyAdmin/inspector/icon-v3.svg.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/easycorp/easyadmin-bundle/src/Resources/views/inspector/icon-v3.svg.twig");
+", "@EasyAdmin/inspector/icon-v3.svg.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/easycorp/easyadmin-bundle/src/Resources/views/inspector/icon-v3.svg.twig");
     }
 }

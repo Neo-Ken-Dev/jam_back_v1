@@ -81,6 +81,6 @@ class __TwigTemplate_9d32d1f9b7c97d467d704b89f42c8393 extends Template
     <line x1=\"14\" y1=\"10\" x2=\"14.01\" y2=\"10\"></line>
     <path d=\"M10 14a3.5 3.5 0 0 0 4 0\"></path>
 </svg>
-", "@WebProfiler/Icon/exception.svg", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/symfony/web-profiler-bundle/Resources/views/Icon/exception.svg");
+", "@WebProfiler/Icon/exception.svg", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/symfony/web-profiler-bundle/Resources/views/Icon/exception.svg");
     }
 }

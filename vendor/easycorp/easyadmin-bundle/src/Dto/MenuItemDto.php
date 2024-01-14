@@ -34,6 +34,7 @@ final class MenuItemDto
     private ?MenuItemBadgeDto $badge = null;
     /** @var MenuItemDto[] */
     private array $subItems = [];
+    private array $htmlAttributes = [];
 
     public function getType(): string
     {
@@ -213,9 +214,9 @@ final class MenuItemDto
         return $this->badge;
     }
 
-    public function setBadge(mixed $content, string $style): void
+    public function setBadge(mixed $content, string $style, array $htmlAttributes = []): void
     {
-        $this->badge = new MenuItemBadgeDto($content, trim($style));
+        $this->badge = new MenuItemBadgeDto($content, trim($style), $htmlAttributes);
     }
 
     /**
@@ -242,5 +243,15 @@ final class MenuItemDto
     public function isMenuSection(): bool
     {
         return self::TYPE_SECTION === $this->type;
+    }
+
+    public function getHtmlAttributes(): array
+    {
+        return $this->htmlAttributes;
+    }
+
+    public function setHtmlAttribute(string $attribute, mixed $value): void
+    {
+        $this->htmlAttributes[$attribute] = $value;
     }
 }

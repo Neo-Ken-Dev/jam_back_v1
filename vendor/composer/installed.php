@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '7ffc7b0ba928ec90972b9711c2a7494e9bd6c1ce',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '7ffc7b0ba928ec90972b9711c2a7494e9bd6c1ce',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -200,9 +200,9 @@
             'dev_requirement' => false,
         ),
         'easycorp/easyadmin-bundle' => array(
-            'pretty_version' => 'v4.8.9',
-            'version' => '4.8.9.0',
-            'reference' => '89991bb68127f7a862d79758eb4fffc8e10a8e73',
+            'pretty_version' => 'v4.8.10',
+            'version' => '4.8.10.0',
+            'reference' => '31a9938b8ec84a1fe0f30cb9d3df7d006b7deed7',
             'type' => 'symfony-bundle',
             'install_path' => __DIR__ . '/../easycorp/easyadmin-bundle',
             'aliases' => array(),

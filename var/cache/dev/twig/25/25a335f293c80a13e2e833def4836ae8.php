@@ -162,6 +162,6 @@ class __TwigTemplate_8678d9369a489d0167be9781bdcfee64 extends Template
         <button type=\"submit\" class=\"btn btn-primary\">Register</button>
     {{ form_end(registrationForm) }}
 {% endblock %}
-", "registration/register.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/templates/registration/register.html.twig");
+", "registration/register.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/templates/registration/register.html.twig");
     }
 }

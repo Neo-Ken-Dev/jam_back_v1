@@ -415,6 +415,6 @@ class __TwigTemplate_30da0d84eebbb8279b6db0fd2acc5bd6 extends Template
 {% endblock body_javascript %}
 </body>
 </html>
-", "@ApiPlatform/GraphQlPlayground/index.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/api-platform/core/src/Symfony/Bundle/Resources/views/GraphQlPlayground/index.html.twig");
+", "@ApiPlatform/GraphQlPlayground/index.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/api-platform/core/src/Symfony/Bundle/Resources/views/GraphQlPlayground/index.html.twig");
     }
 }

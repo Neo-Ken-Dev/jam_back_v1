@@ -81,6 +81,6 @@ class __TwigTemplate_ac6f7e48ea17bd8b018fe1724e6bf42a extends Template
     <polygon fill=\"#AAA\" points=\"18 8.5 24 8.5 24 15.5 19.5 15.5\" />
     <polygon fill=\"#AAA\" points=\"0 17 6.5 17 7.5 21 8.5 17 13 17 12 21 21 21 20 17 24 17 24 24 0 24\" />
 </svg>
-", "@DoctrineMigrations/Collector/icon.svg", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/doctrine/doctrine-migrations-bundle/Resources/views/Collector/icon.svg");
+", "@DoctrineMigrations/Collector/icon.svg", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/doctrine/doctrine-migrations-bundle/Resources/views/Collector/icon.svg");
     }
 }

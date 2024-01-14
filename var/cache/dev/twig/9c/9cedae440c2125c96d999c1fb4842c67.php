@@ -134,6 +134,6 @@ class __TwigTemplate_218cc51acc64353f4af3b4368c8278ab extends Template
         {% for attr, value in css_asset.htmlAttributes %}{{ attr }}=\"{{ value|e('html_attr') }}\" {% endfor %}>
     {% endif %}
 {% endfor %}
-", "@EasyAdmin/includes/_css_assets.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/easycorp/easyadmin-bundle/src/Resources/views/includes/_css_assets.html.twig");
+", "@EasyAdmin/includes/_css_assets.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/easycorp/easyadmin-bundle/src/Resources/views/includes/_css_assets.html.twig");
     }
 }

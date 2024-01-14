@@ -1837,6 +1837,6 @@ class __TwigTemplate_fee5d89e50cddceda7849b2e113eca29 extends Template
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

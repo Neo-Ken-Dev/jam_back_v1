@@ -26,8 +26,9 @@ class MenuItemMatcher implements MenuItemMatcherInterface
 
         $currentPageQueryParameters = $adminContext->getRequest()->query->all();
         $menuItemQueryString = null === $menuItemDto->getLinkUrl() ? null : parse_url($menuItemDto->getLinkUrl(), \PHP_URL_QUERY);
+
         $menuItemQueryParameters = [];
-        if (null !== $menuItemQueryString) {
+        if (true === \is_string($menuItemQueryString)) {
             parse_str($menuItemQueryString, $menuItemQueryParameters);
         }
 

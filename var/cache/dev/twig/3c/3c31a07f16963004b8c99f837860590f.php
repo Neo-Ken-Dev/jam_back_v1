@@ -85,6 +85,6 @@ class __TwigTemplate_a6f9b66c15ee0c755de0a8127977ed31 extends Template
     <circle cx=\"18.5\" cy=\"18.5\" r=\"1.5\"></circle>
     <circle cx=\"8.5\" cy=\"15.5\" r=\"4.5\"></circle>
 </svg>
-", "@WebProfiler/Icon/http-client.svg", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/symfony/web-profiler-bundle/Resources/views/Icon/http-client.svg");
+", "@WebProfiler/Icon/http-client.svg", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/symfony/web-profiler-bundle/Resources/views/Icon/http-client.svg");
     }
 }

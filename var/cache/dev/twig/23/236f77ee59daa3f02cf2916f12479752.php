@@ -75,6 +75,6 @@ class __TwigTemplate_47c90661a86e910ca56ec7c74f3462f5 extends Template
     <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/>
     <rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\" />
 </svg>
-", "@WebProfiler/Icon/settings-width-fixed.svg", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/symfony/web-profiler-bundle/Resources/views/Icon/settings-width-fixed.svg");
+", "@WebProfiler/Icon/settings-width-fixed.svg", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/symfony/web-profiler-bundle/Resources/views/Icon/settings-width-fixed.svg");
     }
 }

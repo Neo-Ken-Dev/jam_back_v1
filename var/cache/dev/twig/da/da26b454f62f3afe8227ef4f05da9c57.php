@@ -54,100 +54,105 @@ class __TwigTemplate_bcedad0e36396b4fa8c68294cbad2769 extends Template
         }
         // line 10
         echo "    </div>
-
-    <nav class=\"pager list-pagination-paginator ";
-        // line 12
-        echo (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 12, $this->source); })()), "hasPreviousPage", [], "any", false, false, false, 12)) ? ("first-page") : (""));
-        echo " ";
-        echo (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 12, $this->source); })()), "hasNextPage", [], "any", false, false, false, 12)) ? ("last-page") : (""));
-        echo "\">
-        <ul class=\"pagination\">
-            <li class=\"page-item ";
-        // line 14
-        echo (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 14, $this->source); })()), "hasPreviousPage", [], "any", false, false, false, 14)) ? ("disabled") : (""));
-        echo "\">
-                <a class=\"page-link\" href=\"";
-        // line 15
-        (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 15, $this->source); })()), "hasPreviousPage", [], "any", false, false, false, 15)) ? (print ("#")) : (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 15, $this->source); })()), "generateUrlForPage", [twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 15, $this->source); })()), "previousPage", [], "any", false, false, false, 15)], "method", false, false, false, 15), "html", null, true))));
-        echo "\">
-                    <i class=\"fa fa-angle-left mx-1\"></i> <span class=\"btn-label\">";
-        // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("paginator.previous", [], "EasyAdminBundle"), "html", null, true);
-        echo "</span>
-                </a>
-            </li>
-
-            ";
-        // line 20
-        if (((array_key_exists("render_detailed_pagination", $context)) ? ((isset($context["render_detailed_pagination"]) || array_key_exists("render_detailed_pagination", $context) ? $context["render_detailed_pagination"] : (function () { throw new RuntimeError('Variable "render_detailed_pagination" does not exist.', 20, $this->source); })())) : (true))) {
-            // line 21
-            echo "                ";
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 21, $this->source); })()), "pageRange", [], "any", false, false, false, 21));
-            foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 22
-                echo "                    <li class=\"page-item ";
-                echo ((($context["page"] == twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 22, $this->source); })()), "currentPage", [], "any", false, false, false, 22))) ? ("active") : (""));
-                echo " ";
-                echo (((null === $context["page"])) ? ("disabled") : (""));
-                echo "\">
-                        ";
-                // line 23
-                if ((null === $context["page"])) {
-                    // line 24
-                    echo "                            <span class=\"page-link\">&hellip;</span>
-                        ";
-                } else {
-                    // line 26
-                    echo "                            <a class=\"page-link\" href=\"";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 26, $this->source); })()), "generateUrlForPage", [$context["page"]], "method", false, false, false, 26), "html", null, true);
-                    echo "\">";
-                    echo twig_escape_filter($this->env, $context["page"], "html", null, true);
-                    echo "</a>
-                        ";
-                }
-                // line 28
-                echo "                    </li>
-                ";
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 30
-            echo "            ";
-        } else {
-            // line 31
-            echo "                <li class=\"page-item active ";
-            echo (((null === twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 31, $this->source); })()), "currentPage", [], "any", false, false, false, 31))) ? ("disabled") : (""));
+    ";
+        // line 11
+        if ((twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 11, $this->source); })()), "hasPreviousPage", [], "any", false, false, false, 11) || twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 11, $this->source); })()), "hasNextPage", [], "any", false, false, false, 11))) {
+            // line 12
+            echo "        <nav class=\"pager list-pagination-paginator ";
+            echo (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 12, $this->source); })()), "hasPreviousPage", [], "any", false, false, false, 12)) ? ("first-page") : (""));
+            echo " ";
+            echo (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 12, $this->source); })()), "hasNextPage", [], "any", false, false, false, 12)) ? ("last-page") : (""));
+            echo "\">
+            <ul class=\"pagination\">
+                <li class=\"page-item ";
+            // line 14
+            echo (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 14, $this->source); })()), "hasPreviousPage", [], "any", false, false, false, 14)) ? ("disabled") : (""));
             echo "\">
                     <a class=\"page-link\" href=\"";
-            // line 32
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 32, $this->source); })()), "generateUrlForPage", [twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 32, $this->source); })()), "currentPage", [], "any", false, false, false, 32)], "method", false, false, false, 32), "html", null, true);
-            echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 32, $this->source); })()), "currentPage", [], "any", false, false, false, 32), "html", null, true);
-            echo "</a>
+            // line 15
+            (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 15, $this->source); })()), "hasPreviousPage", [], "any", false, false, false, 15)) ? (print ("#")) : (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 15, $this->source); })()), "generateUrlForPage", [twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 15, $this->source); })()), "previousPage", [], "any", false, false, false, 15)], "method", false, false, false, 15), "html", null, true))));
+            echo "\">
+                        <i class=\"fa fa-angle-left mx-1\"></i> <span class=\"btn-label\">";
+            // line 16
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("paginator.previous", [], "EasyAdminBundle"), "html", null, true);
+            echo "</span>
+                    </a>
                 </li>
-            ";
+    
+                ";
+            // line 20
+            if (((array_key_exists("render_detailed_pagination", $context)) ? ((isset($context["render_detailed_pagination"]) || array_key_exists("render_detailed_pagination", $context) ? $context["render_detailed_pagination"] : (function () { throw new RuntimeError('Variable "render_detailed_pagination" does not exist.', 20, $this->source); })())) : (true))) {
+                // line 21
+                echo "                    ";
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 21, $this->source); })()), "pageRange", [], "any", false, false, false, 21));
+                foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
+                    // line 22
+                    echo "                        <li class=\"page-item ";
+                    echo ((($context["page"] == twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 22, $this->source); })()), "currentPage", [], "any", false, false, false, 22))) ? ("active") : (""));
+                    echo " ";
+                    echo (((null === $context["page"])) ? ("disabled") : (""));
+                    echo "\">
+                            ";
+                    // line 23
+                    if ((null === $context["page"])) {
+                        // line 24
+                        echo "                                <span class=\"page-link\">&hellip;</span>
+                            ";
+                    } else {
+                        // line 26
+                        echo "                                <a class=\"page-link\" href=\"";
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 26, $this->source); })()), "generateUrlForPage", [$context["page"]], "method", false, false, false, 26), "html", null, true);
+                        echo "\">";
+                        echo twig_escape_filter($this->env, $context["page"], "html", null, true);
+                        echo "</a>
+                            ";
+                    }
+                    // line 28
+                    echo "                        </li>
+                    ";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 30
+                echo "                ";
+            } else {
+                // line 31
+                echo "                    <li class=\"page-item active ";
+                echo (((null === twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 31, $this->source); })()), "currentPage", [], "any", false, false, false, 31))) ? ("disabled") : (""));
+                echo "\">
+                        <a class=\"page-link\" href=\"";
+                // line 32
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 32, $this->source); })()), "generateUrlForPage", [twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 32, $this->source); })()), "currentPage", [], "any", false, false, false, 32)], "method", false, false, false, 32), "html", null, true);
+                echo "\">";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 32, $this->source); })()), "currentPage", [], "any", false, false, false, 32), "html", null, true);
+                echo "</a>
+                    </li>
+                ";
+            }
+            // line 35
+            echo "    
+                <li class=\"page-item ";
+            // line 36
+            echo (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 36, $this->source); })()), "hasNextPage", [], "any", false, false, false, 36)) ? ("disabled") : (""));
+            echo "\">
+                    <a class=\"page-link\" href=\"";
+            // line 37
+            (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 37, $this->source); })()), "hasNextPage", [], "any", false, false, false, 37)) ? (print ("#")) : (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 37, $this->source); })()), "generateUrlForPage", [twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 37, $this->source); })()), "nextPage", [], "any", false, false, false, 37)], "method", false, false, false, 37), "html", null, true))));
+            echo "\">
+                        <span class=\"btn-label\">";
+            // line 38
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("paginator.next", [], "EasyAdminBundle"), "html", null, true);
+            echo "</span> <i class=\"fa fa-angle-right mx-1\"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    ";
         }
-        // line 35
-        echo "
-            <li class=\"page-item ";
-        // line 36
-        echo (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 36, $this->source); })()), "hasNextPage", [], "any", false, false, false, 36)) ? ("disabled") : (""));
-        echo "\">
-                <a class=\"page-link\" href=\"";
-        // line 37
-        (( !twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 37, $this->source); })()), "hasNextPage", [], "any", false, false, false, 37)) ? (print ("#")) : (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 37, $this->source); })()), "generateUrlForPage", [twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 37, $this->source); })()), "nextPage", [], "any", false, false, false, 37)], "method", false, false, false, 37), "html", null, true))));
-        echo "\">
-                    <span class=\"btn-label\">";
-        // line 38
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("paginator.next", [], "EasyAdminBundle"), "html", null, true);
-        echo "</span> <i class=\"fa fa-angle-right mx-1\"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>
+        // line 44
+        echo "</div>
 ";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -178,7 +183,7 @@ class __TwigTemplate_bcedad0e36396b4fa8c68294cbad2769 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  144 => 38,  140 => 37,  136 => 36,  133 => 35,  125 => 32,  120 => 31,  117 => 30,  110 => 28,  102 => 26,  98 => 24,  96 => 23,  89 => 22,  84 => 21,  82 => 20,  75 => 16,  71 => 15,  67 => 14,  60 => 12,  56 => 10,  50 => 8,  48 => 7,  43 => 4,);
+        return array (  155 => 44,  146 => 38,  142 => 37,  138 => 36,  135 => 35,  127 => 32,  122 => 31,  119 => 30,  112 => 28,  104 => 26,  100 => 24,  98 => 23,  91 => 22,  86 => 21,  84 => 20,  77 => 16,  73 => 15,  69 => 14,  61 => 12,  59 => 11,  56 => 10,  50 => 8,  48 => 7,  43 => 4,);
     }
 
     public function getSourceContext()
@@ -193,39 +198,40 @@ class __TwigTemplate_bcedad0e36396b4fa8c68294cbad2769 extends Template
             {{ 'paginator.results'|trans({'%count%': paginator.numResults|format})|raw }}
         {% endif %}
     </div>
-
-    <nav class=\"pager list-pagination-paginator {{ not paginator.hasPreviousPage ? 'first-page' }} {{ not paginator.hasNextPage ? 'last-page' }}\">
-        <ul class=\"pagination\">
-            <li class=\"page-item {{ not paginator.hasPreviousPage ? 'disabled' }}\">
-                <a class=\"page-link\" href=\"{{ not paginator.hasPreviousPage ? '#' : paginator.generateUrlForPage(paginator.previousPage) }}\">
-                    <i class=\"fa fa-angle-left mx-1\"></i> <span class=\"btn-label\">{{ 'paginator.previous'|trans }}</span>
-                </a>
-            </li>
-
-            {% if render_detailed_pagination is defined ? render_detailed_pagination : true %}
-                {% for page in paginator.pageRange %}
-                    <li class=\"page-item {{ page == paginator.currentPage ? 'active' }} {{ page is null ? 'disabled' }}\">
-                        {% if page is null %}
-                            <span class=\"page-link\">&hellip;</span>
-                        {% else %}
-                            <a class=\"page-link\" href=\"{{ paginator.generateUrlForPage(page) }}\">{{ page }}</a>
-                        {% endif %}
-                    </li>
-                {% endfor %}
-            {% else %}
-                <li class=\"page-item active {{ paginator.currentPage is null ? 'disabled' }}\">
-                    <a class=\"page-link\" href=\"{{ paginator.generateUrlForPage(paginator.currentPage) }}\">{{ paginator.currentPage }}</a>
+    {% if paginator.hasPreviousPage or paginator.hasNextPage %}
+        <nav class=\"pager list-pagination-paginator {{ not paginator.hasPreviousPage ? 'first-page' }} {{ not paginator.hasNextPage ? 'last-page' }}\">
+            <ul class=\"pagination\">
+                <li class=\"page-item {{ not paginator.hasPreviousPage ? 'disabled' }}\">
+                    <a class=\"page-link\" href=\"{{ not paginator.hasPreviousPage ? '#' : paginator.generateUrlForPage(paginator.previousPage) }}\">
+                        <i class=\"fa fa-angle-left mx-1\"></i> <span class=\"btn-label\">{{ 'paginator.previous'|trans }}</span>
+                    </a>
                 </li>
-            {% endif %}
-
-            <li class=\"page-item {{ not paginator.hasNextPage ? 'disabled' }}\">
-                <a class=\"page-link\" href=\"{{ not paginator.hasNextPage ? '#' : paginator.generateUrlForPage(paginator.nextPage) }}\">
-                    <span class=\"btn-label\">{{ 'paginator.next'|trans }}</span> <i class=\"fa fa-angle-right mx-1\"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    
+                {% if render_detailed_pagination is defined ? render_detailed_pagination : true %}
+                    {% for page in paginator.pageRange %}
+                        <li class=\"page-item {{ page == paginator.currentPage ? 'active' }} {{ page is null ? 'disabled' }}\">
+                            {% if page is null %}
+                                <span class=\"page-link\">&hellip;</span>
+                            {% else %}
+                                <a class=\"page-link\" href=\"{{ paginator.generateUrlForPage(page) }}\">{{ page }}</a>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    <li class=\"page-item active {{ paginator.currentPage is null ? 'disabled' }}\">
+                        <a class=\"page-link\" href=\"{{ paginator.generateUrlForPage(paginator.currentPage) }}\">{{ paginator.currentPage }}</a>
+                    </li>
+                {% endif %}
+    
+                <li class=\"page-item {{ not paginator.hasNextPage ? 'disabled' }}\">
+                    <a class=\"page-link\" href=\"{{ not paginator.hasNextPage ? '#' : paginator.generateUrlForPage(paginator.nextPage) }}\">
+                        <span class=\"btn-label\">{{ 'paginator.next'|trans }}</span> <i class=\"fa fa-angle-right mx-1\"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    {% endif %}
 </div>
-", "@EasyAdmin/crud/paginator.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/paginator.html.twig");
+", "@EasyAdmin/crud/paginator.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/paginator.html.twig");
     }
 }

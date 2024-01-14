@@ -79,6 +79,6 @@ class __TwigTemplate_512dd07a76b31c0e3391123101d18397 extends Template
     <line x1=\"4\" y1=\"12\" x2=\"20\" y2=\"12\"></line>
     <line x1=\"4\" y1=\"18\" x2=\"20\" y2=\"18\"></line>
 </svg>
-", "@WebProfiler/Icon/menu.svg", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/symfony/web-profiler-bundle/Resources/views/Icon/menu.svg");
+", "@WebProfiler/Icon/menu.svg", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/symfony/web-profiler-bundle/Resources/views/Icon/menu.svg");
     }
 }

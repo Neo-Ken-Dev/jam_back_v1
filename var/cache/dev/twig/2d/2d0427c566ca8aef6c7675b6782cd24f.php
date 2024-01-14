@@ -67,6 +67,6 @@ class __TwigTemplate_1f230246ccf773300fef45fee3b6d8ca extends Template
     {
         return new Source("{# this template is rendered when an error or exception occurs while
    trying to get the value of the field (by default nothing is displayed) #}
-", "@EasyAdmin/label/undefined.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/easycorp/easyadmin-bundle/src/Resources/views/label/undefined.html.twig");
+", "@EasyAdmin/label/undefined.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/easycorp/easyadmin-bundle/src/Resources/views/label/undefined.html.twig");
     }
 }

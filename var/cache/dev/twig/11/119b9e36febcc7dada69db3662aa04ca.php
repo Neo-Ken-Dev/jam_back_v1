@@ -148,6 +148,6 @@ class __TwigTemplate_5b6702de5a43d8a1eaa944a71f9c9204 extends Template
         </div>
     </div>
 {% endif %}
-", "@EasyAdmin/crud/field/text_editor.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/text_editor.html.twig");
+", "@EasyAdmin/crud/field/text_editor.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/text_editor.html.twig");
     }
 }

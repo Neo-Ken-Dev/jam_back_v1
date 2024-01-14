@@ -446,6 +446,6 @@ class __TwigTemplate_577c6be6d3f8e1ee2fda7c48119af00e extends Template
 </article>
 </body>
 </html>
-", "@EasyAdmin/welcome.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/easycorp/easyadmin-bundle/src/Resources/views/welcome.html.twig");
+", "@EasyAdmin/welcome.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/easycorp/easyadmin-bundle/src/Resources/views/welcome.html.twig");
     }
 }

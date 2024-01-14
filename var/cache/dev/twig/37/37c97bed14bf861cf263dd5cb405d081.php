@@ -180,6 +180,6 @@ class __TwigTemplate_b50b76a2bcd95c75434e9752c7271986 extends Template
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

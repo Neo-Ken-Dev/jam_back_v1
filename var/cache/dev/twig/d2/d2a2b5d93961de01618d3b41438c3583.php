@@ -80,6 +80,6 @@ class __TwigTemplate_7ef62964372876dda22a4dbf9deab7db extends Template
     public function getSourceContext()
     {
         return new Source("{% extends \"@email/zurb_2/notification/body.html.twig\" %}
-", "@email/default/notification/body.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/symfony/twig-bridge/Resources/views/Email/default/notification/body.html.twig");
+", "@email/default/notification/body.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/symfony/twig-bridge/Resources/views/Email/default/notification/body.html.twig");
     }
 }

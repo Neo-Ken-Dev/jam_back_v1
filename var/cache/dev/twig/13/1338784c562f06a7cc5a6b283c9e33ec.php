@@ -1552,6 +1552,6 @@ $context["voter_detail"], "vote", [], "array", false, false, false, 423) == twig
         </div>
     {% endif %}
 {% endblock %}
-", "@Security/Collector/security.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
+", "@Security/Collector/security.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
     }
 }

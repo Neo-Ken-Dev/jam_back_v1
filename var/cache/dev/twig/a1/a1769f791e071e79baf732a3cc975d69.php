@@ -113,6 +113,6 @@ class __TwigTemplate_35f2656ce0de6350bc90874c4430763d extends Template
 {% else %}
     {{ field.formattedValue }}
 {% endif %}
-", "@EasyAdmin/crud/field/array.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/array.html.twig");
+", "@EasyAdmin/crud/field/array.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/array.html.twig");
     }
 }

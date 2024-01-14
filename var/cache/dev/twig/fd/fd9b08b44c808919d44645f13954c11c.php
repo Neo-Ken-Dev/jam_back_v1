@@ -28,6 +28,7 @@ class __TwigTemplate_7baea39e9d16ee42a24fe0f254bf7f78 extends Template
 
         $this->blocks = [
         ];
+        $macros["_self"] = $this->macros["_self"] = $this;
     }
 
     protected function doDisplay(array $context, array $blocks = [])
@@ -43,76 +44,44 @@ class __TwigTemplate_7baea39e9d16ee42a24fe0f254bf7f78 extends Template
         if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 4, $this->source); })()), "crud", [], "any", false, false, false, 4), "currentAction", [], "any", false, false, false, 4) == "detail")) {
             // line 5
             echo "    ";
-            $context["configuredHeight"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 5, $this->source); })()), "customOptions", [], "any", false, false, false, 5), "get", ["height"], "method", false, false, false, 5);
-            // line 6
-            echo "    <textarea
-            readonly
-            style=\"";
-            // line 8
-            (((null === (isset($context["configuredHeight"]) || array_key_exists("configuredHeight", $context) ? $context["configuredHeight"] : (function () { throw new RuntimeError('Variable "configuredHeight" does not exist.', 8, $this->source); })()))) ? (print ("max-height: 500px;")) : (print (twig_escape_filter($this->env, (("max-height: unset; height: " . (isset($context["configuredHeight"]) || array_key_exists("configuredHeight", $context) ? $context["configuredHeight"] : (function () { throw new RuntimeError('Variable "configuredHeight" does not exist.', 8, $this->source); })())) . "px"), "html", null, true))));
-            echo "\"
-            data-ea-code-editor-field=\"true\"
-            data-language=\"";
-            // line 10
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 10, $this->source); })()), "customOptions", [], "any", false, false, false, 10), "get", ["language"], "method", false, false, false, 10), "html_attr");
-            echo "\"
-            data-tab-size=\"";
-            // line 11
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 11, $this->source); })()), "customOptions", [], "any", false, false, false, 11), "get", ["tabSize"], "method", false, false, false, 11), "html_attr");
-            echo "\"
-            data-indent-with-tabs=\"";
-            // line 12
-            echo ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 12, $this->source); })()), "customOptions", [], "any", false, false, false, 12), "get", ["indentWithTabs"], "method", false, false, false, 12)) ? ("true") : ("false"));
-            echo "\"
-            data-show-line-numbers=\"";
-            // line 13
-            echo ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 13, $this->source); })()), "customOptions", [], "any", false, false, false, 13), "get", ["showLineNumbers"], "method", false, false, false, 13)) ? ("true") : ("false"));
-            echo "\"
-            data-number-of-rows=\"";
-            // line 14
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 14, $this->source); })()), "customOptions", [], "any", false, false, false, 14), "get", ["numOfRows"], "method", false, false, false, 14), "html_attr");
-            echo "\"
-    >";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 16, $this->source); })()), "formattedValue", [], "any", false, false, false, 16));
-            // line 17
-            echo "</textarea>
+            echo twig_call_macro($macros["_self"], "macro_render_code_editor", [(isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 5, $this->source); })())], 5, $context, $this->getSourceContext());
+            echo "
 ";
         } else {
-            // line 19
+            // line 7
             echo "    ";
-            $context["html_id"] = ("ea-code-editor-" . twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 19, $this->source); })()), "uniqueId", [], "any", false, false, false, 19));
-            // line 20
+            $context["html_id"] = ("ea-code-editor-" . twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 7, $this->source); })()), "uniqueId", [], "any", false, false, false, 7));
+            // line 8
             echo "    <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#";
-            echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 20, $this->source); })()), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 8, $this->source); })()), "html", null, true);
             echo "\">
         <i class=\"fa fa-code\"></i> ";
-            // line 21
+            // line 9
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("field.code_editor.view_code", [], "EasyAdminBundle"), "html", null, true);
             echo "
     </a>
 
     <div class=\"modal fade\" id=\"";
-            // line 24
-            echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 24, $this->source); })()), "html", null, true);
+            // line 12
+            echo twig_escape_filter($this->env, (isset($context["html_id"]) || array_key_exists("html_id", $context) ? $context["html_id"] : (function () { throw new RuntimeError('Variable "html_id" does not exist.', 12, $this->source); })()), "html", null, true);
             echo "\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
         <div class=\"modal-dialog modal-lg\" role=\"document\">
             <div class=\"modal-content\">
                 <div class=\"modal-header\">
                     <h5 class=\"modal-title\">";
-            // line 28
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 28, $this->source); })()), "label", [], "any", false, false, false, 28)), "html", null, true);
+            // line 16
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 16, $this->source); })()), "label", [], "any", false, false, false, 16)), "html", null, true);
             echo "</h5>
                     <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"";
-            // line 29
+            // line 17
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("action.close", [], "EasyAdminBundle"), "html", null, true);
             echo "\">
                     </button>
                 </div>
                 <div class=\"modal-body\">
                     ";
-            // line 33
-            echo twig_nl2br(twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 33, $this->source); })()), "formattedValue", [], "any", false, false, false, 33)));
+            // line 21
+            echo twig_call_macro($macros["_self"], "macro_render_code_editor", [(isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 21, $this->source); })())], 21, $context, $this->getSourceContext());
             echo "
                 </div>
             </div>
@@ -120,12 +89,84 @@ class __TwigTemplate_7baea39e9d16ee42a24fe0f254bf7f78 extends Template
     </div>
 ";
         }
+        // line 27
+        echo "
+";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
+    }
+
+    // line 28
+    public function macro_render_code_editor($__field__ = null, ...$__varargs__)
+    {
+        $macros = $this->macros;
+        $context = $this->env->mergeGlobals([
+            "field" => $__field__,
+            "varargs" => $__varargs__,
+        ]);
+
+        $blocks = [];
+
+        ob_start();
+        try {
+            $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+            $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "macro", "render_code_editor"));
+
+            $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+            $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "macro", "render_code_editor"));
+
+            // line 29
+            echo "    ";
+            $context["configuredHeight"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 29, $this->source); })()), "customOptions", [], "any", false, false, false, 29), "get", ["height"], "method", false, false, false, 29);
+            // line 30
+            echo "    <textarea
+            readonly
+            style=\"";
+            // line 32
+            (((null === (isset($context["configuredHeight"]) || array_key_exists("configuredHeight", $context) ? $context["configuredHeight"] : (function () { throw new RuntimeError('Variable "configuredHeight" does not exist.', 32, $this->source); })()))) ? (print ("max-height: 500px;")) : (print (twig_escape_filter($this->env, (("max-height: unset; height: " . (isset($context["configuredHeight"]) || array_key_exists("configuredHeight", $context) ? $context["configuredHeight"] : (function () { throw new RuntimeError('Variable "configuredHeight" does not exist.', 32, $this->source); })())) . "px"), "html", null, true))));
+            echo "\"
+            data-ea-code-editor-field=\"true\"
+            data-language=\"";
+            // line 34
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 34, $this->source); })()), "customOptions", [], "any", false, false, false, 34), "get", ["language"], "method", false, false, false, 34), "html_attr");
+            echo "\"
+            data-tab-size=\"";
+            // line 35
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 35, $this->source); })()), "customOptions", [], "any", false, false, false, 35), "get", ["tabSize"], "method", false, false, false, 35), "html_attr");
+            echo "\"
+            data-indent-with-tabs=\"";
+            // line 36
+            echo ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 36, $this->source); })()), "customOptions", [], "any", false, false, false, 36), "get", ["indentWithTabs"], "method", false, false, false, 36)) ? ("true") : ("false"));
+            echo "\"
+            data-show-line-numbers=\"";
+            // line 37
+            echo ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 37, $this->source); })()), "customOptions", [], "any", false, false, false, 37), "get", ["showLineNumbers"], "method", false, false, false, 37)) ? ("true") : ("false"));
+            echo "\"
+            data-number-of-rows=\"";
+            // line 38
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 38, $this->source); })()), "customOptions", [], "any", false, false, false, 38), "get", ["numOfRows"], "method", false, false, false, 38), "html_attr");
+            echo "\"
+    >";
+            // line 40
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["field"]) || array_key_exists("field", $context) ? $context["field"] : (function () { throw new RuntimeError('Variable "field" does not exist.', 40, $this->source); })()), "formattedValue", [], "any", false, false, false, 40));
+            // line 41
+            echo "</textarea>
+";
+            
+            $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+            
+            $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+
+            return ('' === $tmp = ob_get_contents()) ? '' : new Markup($tmp, $this->env->getCharset());
+        } finally {
+            ob_end_clean();
+        }
     }
 
     /**
@@ -149,7 +190,7 @@ class __TwigTemplate_7baea39e9d16ee42a24fe0f254bf7f78 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  115 => 33,  108 => 29,  104 => 28,  97 => 24,  91 => 21,  86 => 20,  83 => 19,  79 => 17,  77 => 16,  73 => 14,  69 => 13,  65 => 12,  61 => 11,  57 => 10,  52 => 8,  48 => 6,  45 => 5,  43 => 4,);
+        return array (  157 => 41,  155 => 40,  151 => 38,  147 => 37,  143 => 36,  139 => 35,  135 => 34,  130 => 32,  126 => 30,  123 => 29,  104 => 28,  93 => 27,  84 => 21,  77 => 17,  73 => 16,  66 => 12,  60 => 9,  55 => 8,  52 => 7,  46 => 5,  44 => 4,);
     }
 
     public function getSourceContext()
@@ -158,19 +199,7 @@ class __TwigTemplate_7baea39e9d16ee42a24fe0f254bf7f78 extends Template
 {# @var field \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\FieldDto #}
 {# @var entity \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\EntityDto #}
 {% if ea.crud.currentAction == 'detail' %}
-    {% set configuredHeight = field.customOptions.get('height') %}
-    <textarea
-            readonly
-            style=\"{{ configuredHeight is null ? 'max-height: 500px;' : 'max-height: unset; height: ' ~ configuredHeight ~ 'px' }}\"
-            data-ea-code-editor-field=\"true\"
-            data-language=\"{{ field.customOptions.get('language')|e('html_attr') }}\"
-            data-tab-size=\"{{ field.customOptions.get('tabSize')|e('html_attr') }}\"
-            data-indent-with-tabs=\"{{ field.customOptions.get('indentWithTabs') ? 'true' : 'false' }}\"
-            data-show-line-numbers=\"{{ field.customOptions.get('showLineNumbers') ? 'true' : 'false' }}\"
-            data-number-of-rows=\"{{ field.customOptions.get('numOfRows')|e('html_attr') }}\"
-    >
-        {{- field.formattedValue|escape -}}
-    </textarea>
+    {{ _self.render_code_editor(field) }}
 {% else %}
     {% set html_id = 'ea-code-editor-' ~ field.uniqueId %}
     <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#{{ html_id }}\">
@@ -186,12 +215,28 @@ class __TwigTemplate_7baea39e9d16ee42a24fe0f254bf7f78 extends Template
                     </button>
                 </div>
                 <div class=\"modal-body\">
-                    {{ field.formattedValue|escape|nl2br }}
+                    {{ _self.render_code_editor(field) }}
                 </div>
             </div>
         </div>
     </div>
 {% endif %}
-", "@EasyAdmin/crud/field/code_editor.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/code_editor.html.twig");
+
+{% macro render_code_editor(field) %}
+    {% set configuredHeight = field.customOptions.get('height') %}
+    <textarea
+            readonly
+            style=\"{{ configuredHeight is null ? 'max-height: 500px;' : 'max-height: unset; height: ' ~ configuredHeight ~ 'px' }}\"
+            data-ea-code-editor-field=\"true\"
+            data-language=\"{{ field.customOptions.get('language')|e('html_attr') }}\"
+            data-tab-size=\"{{ field.customOptions.get('tabSize')|e('html_attr') }}\"
+            data-indent-with-tabs=\"{{ field.customOptions.get('indentWithTabs') ? 'true' : 'false' }}\"
+            data-show-line-numbers=\"{{ field.customOptions.get('showLineNumbers') ? 'true' : 'false' }}\"
+            data-number-of-rows=\"{{ field.customOptions.get('numOfRows')|e('html_attr') }}\"
+    >
+        {{- field.formattedValue|escape -}}
+    </textarea>
+{% endmacro %}
+", "@EasyAdmin/crud/field/code_editor.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/code_editor.html.twig");
     }
 }

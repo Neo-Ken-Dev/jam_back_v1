@@ -324,6 +324,6 @@ class __TwigTemplate_6c7f66ba8e72b4d33d3dfeea05c54826 extends Template
 
     </div>
 {% endblock %}
-", "search/index.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/templates/search/index.html.twig");
+", "search/index.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/templates/search/index.html.twig");
     }
 }

@@ -66,6 +66,9 @@ class __TwigTemplate_73d44f3b72000ef612b65409185b474a extends Template
         echo "</nav>
 
 ";
+        // line 37
+        echo "
+";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -276,6 +279,54 @@ class __TwigTemplate_73d44f3b72000ef612b65409185b474a extends Template
     }
 
     // line 32
+    public function macro_render_html_attributes($__item__ = null, ...$__varargs__)
+    {
+        $macros = $this->macros;
+        $context = $this->env->mergeGlobals([
+            "item" => $__item__,
+            "varargs" => $__varargs__,
+        ]);
+
+        $blocks = [];
+
+        ob_start();
+        try {
+            $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+            $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "macro", "render_html_attributes"));
+
+            $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+            $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "macro", "render_html_attributes"));
+
+            // line 33
+            echo "    ";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 33, $this->source); })()), "htmlAttributes", [], "any", false, false, false, 33));
+            foreach ($context['_seq'] as $context["attribute_name"] => $context["attribute_value"]) {
+                // line 34
+                echo "        ";
+                echo twig_escape_filter($this->env, $context["attribute_name"], "html", null, true);
+                echo "=\"";
+                echo twig_escape_filter($this->env, $context["attribute_value"], "html_attr");
+                echo "\"
+    ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['attribute_name'], $context['attribute_value'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            
+            $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+            
+            $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+
+            return ('' === $tmp = ob_get_contents()) ? '' : new Markup($tmp, $this->env->getCharset());
+        } finally {
+            ob_end_clean();
+        }
+    }
+
+    // line 38
     public function macro_render_menu_item($__item__ = null, ...$__varargs__)
     {
         $macros = $this->macros;
@@ -294,89 +345,97 @@ class __TwigTemplate_73d44f3b72000ef612b65409185b474a extends Template
             $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
             $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "macro", "render_menu_item"));
 
-            // line 33
+            // line 39
             echo "    ";
-            if (twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 33, $this->source); })()), "isMenuSection", [], "any", false, false, false, 33)) {
-                // line 34
-                echo "        <span class=\"menu-header-contents\">
+            if (twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 39, $this->source); })()), "isMenuSection", [], "any", false, false, false, 39)) {
+                // line 40
+                echo "        <span class=\"menu-header-contents\" ";
+                echo twig_call_macro($macros["_self"], "macro_render_html_attributes", [(isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 40, $this->source); })())], 40, $context, $this->getSourceContext());
+                echo ">
             ";
-                // line 35
-                if ( !twig_test_empty(twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 35, $this->source); })()), "icon", [], "any", false, false, false, 35))) {
+                // line 41
+                if ( !twig_test_empty(twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 41, $this->source); })()), "icon", [], "any", false, false, false, 41))) {
                     echo "<i class=\"menu-icon fa-fw ";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 35, $this->source); })()), "icon", [], "any", false, false, false, 35), "html", null, true);
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 41, $this->source); })()), "icon", [], "any", false, false, false, 41), "html", null, true);
                     echo "\"></i>";
                 }
-                // line 36
+                // line 42
                 echo "            <span class=\"menu-item-label position-relative ";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 36, $this->source); })()), "cssClass", [], "any", false, false, false, 36), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 42, $this->source); })()), "cssClass", [], "any", false, false, false, 42), "html", null, true);
                 echo "\">
                 ";
-                // line 37
-                echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 37, $this->source); })()), "label", [], "any", false, false, false, 37));
+                // line 43
+                echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 43, $this->source); })()), "label", [], "any", false, false, false, 43));
                 echo "
             </span>
             ";
-                // line 39
-                if (twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 39, $this->source); })()), "badge", [], "any", false, false, false, 39)) {
-                    // line 40
+                // line 45
+                if (twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 45, $this->source); })()), "badge", [], "any", false, false, false, 45)) {
+                    // line 46
                     echo "                <span class=\"menu-item-badge rounded-pill badge ";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 40, $this->source); })()), "badge", [], "any", false, false, false, 40), "cssClass", [], "any", false, false, false, 40), "html", null, true);
-                    echo "\" style=\"";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 40, $this->source); })()), "badge", [], "any", false, false, false, 40), "htmlStyle", [], "any", false, false, false, 40), "html", null, true);
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 46, $this->source); })()), "badge", [], "any", false, false, false, 46), "cssClass", [], "any", false, false, false, 46), "html", null, true);
+                    echo "\" ";
+                    echo twig_call_macro($macros["_self"], "macro_render_html_attributes", [twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 46, $this->source); })()), "badge", [], "any", false, false, false, 46)], 46, $context, $this->getSourceContext());
+                    echo " style=\"";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 46, $this->source); })()), "badge", [], "any", false, false, false, 46), "htmlStyle", [], "any", false, false, false, 46), "html", null, true);
                     echo "\">";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 40, $this->source); })()), "badge", [], "any", false, false, false, 40), "content", [], "any", false, false, false, 40), "html", null, true);
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 46, $this->source); })()), "badge", [], "any", false, false, false, 46), "content", [], "any", false, false, false, 46), "html", null, true);
                     echo "</span>
             ";
                 }
-                // line 42
+                // line 48
                 echo "        </span>
     ";
             } else {
-                // line 44
+                // line 50
                 echo "        <a href=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 44, $this->source); })()), "linkUrl", [], "any", false, false, false, 44), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 50, $this->source); })()), "linkUrl", [], "any", false, false, false, 50), "html", null, true);
                 echo "\" class=\"menu-item-contents ";
-                echo ((twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 44, $this->source); })()), "hasSubItems", [], "any", false, false, false, 44)) ? ("submenu-toggle") : (""));
+                echo ((twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 50, $this->source); })()), "hasSubItems", [], "any", false, false, false, 50)) ? ("submenu-toggle") : (""));
                 echo " ";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 44, $this->source); })()), "cssClass", [], "any", false, false, false, 44), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 50, $this->source); })()), "cssClass", [], "any", false, false, false, 50), "html", null, true);
                 echo "\" target=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 44, $this->source); })()), "linkTarget", [], "any", false, false, false, 44), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 50, $this->source); })()), "linkTarget", [], "any", false, false, false, 50), "html", null, true);
                 echo "\" rel=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 44, $this->source); })()), "linkRel", [], "any", false, false, false, 44), "html", null, true);
-                echo "\" referrerpolicy=\"origin-when-cross-origin\">
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 50, $this->source); })()), "linkRel", [], "any", false, false, false, 50), "html", null, true);
+                echo "\" referrerpolicy=\"origin-when-cross-origin\" ";
+                echo twig_call_macro($macros["_self"], "macro_render_html_attributes", [(isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 50, $this->source); })())], 50, $context, $this->getSourceContext());
+                echo ">
             ";
-                // line 45
-                if ( !twig_test_empty(twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 45, $this->source); })()), "icon", [], "any", false, false, false, 45))) {
+                // line 51
+                if ( !twig_test_empty(twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 51, $this->source); })()), "icon", [], "any", false, false, false, 51))) {
                     echo "<i class=\"menu-icon fa-fw ";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 45, $this->source); })()), "icon", [], "any", false, false, false, 45), "html", null, true);
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 51, $this->source); })()), "icon", [], "any", false, false, false, 51), "html", null, true);
                     echo "\"></i>";
                 }
-                // line 46
+                // line 52
                 echo "            <span class=\"menu-item-label position-relative\">
                 ";
-                // line 47
-                echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 47, $this->source); })()), "label", [], "any", false, false, false, 47));
+                // line 53
+                echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 53, $this->source); })()), "label", [], "any", false, false, false, 53));
                 echo "
             </span>
             ";
-                // line 49
-                if (twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 49, $this->source); })()), "hasSubItems", [], "any", false, false, false, 49)) {
+                // line 55
+                if (twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 55, $this->source); })()), "hasSubItems", [], "any", false, false, false, 55)) {
                     echo "<i class=\"fa fa-fw fa-angle-right submenu-toggle-icon\"></i>";
                 }
-                // line 50
+                // line 56
                 echo "            ";
-                if (twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 50, $this->source); })()), "badge", [], "any", false, false, false, 50)) {
-                    // line 51
+                if (twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 56, $this->source); })()), "badge", [], "any", false, false, false, 56)) {
+                    // line 57
                     echo "                <span class=\"menu-item-badge rounded-pill badge ";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 51, $this->source); })()), "badge", [], "any", false, false, false, 51), "cssClass", [], "any", false, false, false, 51), "html", null, true);
-                    echo "\" style=\"";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 51, $this->source); })()), "badge", [], "any", false, false, false, 51), "htmlStyle", [], "any", false, false, false, 51), "html", null, true);
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 57, $this->source); })()), "badge", [], "any", false, false, false, 57), "cssClass", [], "any", false, false, false, 57), "html", null, true);
+                    echo "\" ";
+                    echo twig_call_macro($macros["_self"], "macro_render_html_attributes", [twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 57, $this->source); })()), "badge", [], "any", false, false, false, 57)], 57, $context, $this->getSourceContext());
+                    echo " style=\"";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 57, $this->source); })()), "badge", [], "any", false, false, false, 57), "htmlStyle", [], "any", false, false, false, 57), "html", null, true);
                     echo "\">";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 51, $this->source); })()), "badge", [], "any", false, false, false, 51), "content", [], "any", false, false, false, 51), "html", null, true);
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 57, $this->source); })()), "badge", [], "any", false, false, false, 57), "content", [], "any", false, false, false, 57), "html", null, true);
                     echo "</span>
             ";
                 }
-                // line 53
+                // line 59
                 echo "        </a>
     ";
             }
@@ -414,7 +473,7 @@ class __TwigTemplate_73d44f3b72000ef612b65409185b474a extends Template
      */
     public function getDebugInfo()
     {
-        return array (  380 => 53,  370 => 51,  367 => 50,  363 => 49,  358 => 47,  355 => 46,  349 => 45,  336 => 44,  332 => 42,  322 => 40,  320 => 39,  315 => 37,  310 => 36,  304 => 35,  301 => 34,  298 => 33,  279 => 32,  261 => 29,  248 => 17,  241 => 16,  231 => 15,  220 => 23,  216 => 21,  202 => 20,  199 => 15,  182 => 14,  179 => 13,  177 => 12,  172 => 10,  161 => 9,  151 => 8,  141 => 26,  127 => 25,  124 => 8,  106 => 7,  96 => 6,  78 => 3,  66 => 30,  64 => 29,  60 => 27,  58 => 6,  54 => 4,  52 => 3,  49 => 2,);
+        return array (  439 => 59,  427 => 57,  424 => 56,  420 => 55,  415 => 53,  412 => 52,  406 => 51,  391 => 50,  387 => 48,  375 => 46,  373 => 45,  368 => 43,  363 => 42,  357 => 41,  352 => 40,  349 => 39,  330 => 38,  306 => 34,  301 => 33,  282 => 32,  264 => 29,  251 => 17,  244 => 16,  234 => 15,  223 => 23,  219 => 21,  205 => 20,  202 => 15,  185 => 14,  182 => 13,  180 => 12,  175 => 10,  164 => 9,  154 => 8,  144 => 26,  130 => 25,  127 => 8,  109 => 7,  99 => 6,  81 => 3,  70 => 37,  66 => 30,  64 => 29,  60 => 27,  58 => 6,  54 => 4,  52 => 3,  49 => 2,);
     }
 
     public function getSourceContext()
@@ -450,30 +509,36 @@ class __TwigTemplate_73d44f3b72000ef612b65409185b474a extends Template
     {% block main_menu_after %}{% endblock %}
 </nav>
 
+{% macro render_html_attributes(item) %}
+    {% for attribute_name, attribute_value in item.htmlAttributes %}
+        {{ attribute_name }}=\"{{ attribute_value|e('html_attr') }}\"
+    {% endfor %}
+{% endmacro %}
+
 {% macro render_menu_item(item) %}
     {% if item.isMenuSection %}
-        <span class=\"menu-header-contents\">
+        <span class=\"menu-header-contents\" {{ _self.render_html_attributes(item) }}>
             {% if item.icon is not empty %}<i class=\"menu-icon fa-fw {{ item.icon }}\"></i>{% endif %}
             <span class=\"menu-item-label position-relative {{ item.cssClass }}\">
                 {{ item.label|trans|raw }}
             </span>
             {% if item.badge %}
-                <span class=\"menu-item-badge rounded-pill badge {{ item.badge.cssClass }}\" style=\"{{ item.badge.htmlStyle }}\">{{ item.badge.content }}</span>
+                <span class=\"menu-item-badge rounded-pill badge {{ item.badge.cssClass }}\" {{ _self.render_html_attributes(item.badge) }} style=\"{{ item.badge.htmlStyle }}\">{{ item.badge.content }}</span>
             {% endif %}
         </span>
     {% else %}
-        <a href=\"{{ item.linkUrl }}\" class=\"menu-item-contents {{ item.hasSubItems ? 'submenu-toggle' }} {{ item.cssClass }}\" target=\"{{ item.linkTarget }}\" rel=\"{{ item.linkRel }}\" referrerpolicy=\"origin-when-cross-origin\">
+        <a href=\"{{ item.linkUrl }}\" class=\"menu-item-contents {{ item.hasSubItems ? 'submenu-toggle' }} {{ item.cssClass }}\" target=\"{{ item.linkTarget }}\" rel=\"{{ item.linkRel }}\" referrerpolicy=\"origin-when-cross-origin\" {{ _self.render_html_attributes(item) }}>
             {% if item.icon is not empty %}<i class=\"menu-icon fa-fw {{ item.icon }}\"></i>{% endif %}
             <span class=\"menu-item-label position-relative\">
                 {{ item.label|trans|raw }}
             </span>
             {% if item.hasSubItems %}<i class=\"fa fa-fw fa-angle-right submenu-toggle-icon\"></i>{% endif %}
             {% if item.badge %}
-                <span class=\"menu-item-badge rounded-pill badge {{ item.badge.cssClass }}\" style=\"{{ item.badge.htmlStyle }}\">{{ item.badge.content }}</span>
+                <span class=\"menu-item-badge rounded-pill badge {{ item.badge.cssClass }}\" {{ _self.render_html_attributes(item.badge) }} style=\"{{ item.badge.htmlStyle }}\">{{ item.badge.content }}</span>
             {% endif %}
         </a>
     {% endif %}
 {% endmacro %}
-", "@EasyAdmin/menu.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/easycorp/easyadmin-bundle/src/Resources/views/menu.html.twig");
+", "@EasyAdmin/menu.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/easycorp/easyadmin-bundle/src/Resources/views/menu.html.twig");
     }
 }

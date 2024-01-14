@@ -274,6 +274,6 @@ class __TwigTemplate_635bf813e52ccb437a847558dfac3fac extends Template
 
 </body>
 </html>
-", "@ApiPlatform/Graphiql/index.html.twig", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/api-platform/core/src/Symfony/Bundle/Resources/views/Graphiql/index.html.twig");
+", "@ApiPlatform/Graphiql/index.html.twig", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/api-platform/core/src/Symfony/Bundle/Resources/views/Graphiql/index.html.twig");
     }
 }

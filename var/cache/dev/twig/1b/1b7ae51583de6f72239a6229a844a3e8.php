@@ -83,6 +83,6 @@ class __TwigTemplate_81998847f4d67e6de01317efd1311f9c extends Template
     <path d=\"M6 15l-3 3l3 3\" />
     <path d=\"M18 15l3 3l-3 3\" />
 </svg>
-", "@WebProfiler/Icon/settings-width-fitted.svg", "/home/hub-grade/Documents/3wa/refacto/back aymeric/application-jam-test-api-platform/vendor/symfony/web-profiler-bundle/Resources/views/Icon/settings-width-fitted.svg");
+", "@WebProfiler/Icon/settings-width-fitted.svg", "/home/hub-grade/Documents/3wa/refacto/jam_back_v1/vendor/symfony/web-profiler-bundle/Resources/views/Icon/settings-width-fitted.svg");
     }
 }
